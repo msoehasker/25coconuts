@@ -49,6 +49,9 @@ public class BeachController {
             if (!started) {
                 coconutTimeline.play();
                 started = true;
+            } else {
+                coconutTimeline.pause();
+                started = false;
             }
         }
     }
